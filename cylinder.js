@@ -10,7 +10,7 @@ const renderer = new THREE.WebGL1Renderer();
 renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-const geometry = new THREE.CylinderGeometry(1,0,1,32,6,false);
+const geometry = new THREE.CylinderGeometry(1,1,2,32,6,false);
 const material = new THREE.MeshPhongMaterial({color:'red',wireframe:true});
 const cylinder = new THREE.Mesh(geometry,material);
 
